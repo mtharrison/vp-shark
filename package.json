@@ -1,0 +1,25 @@
+{
+  "name": "vp-shark",
+  "version": "0.0.0",
+  "description": "A high level wrapper around selenium js webkit, fabricJS and the Videopoker APIs. It exposes a simple API of methods, callbacks and events to automate the playing of games and custom assertions for super simple and clean testing. It is intended to allow you to write expressive succinct tests without worrying about directly interfacing with the canvas API or the selenium API.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mtharrison/vp-shark.git"
+  },
+  "keywords": [
+    "testing"
+  ],
+  "author": "Matt Harrison <hi@matt-harrison.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mtharrison/vp-shark/issues"
+  },
+  "homepage": "https://github.com/mtharrison/vp-shark"
+}
