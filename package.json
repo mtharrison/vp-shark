@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/mtharrison/vp-shark/issues"
   },
-  "homepage": "https://github.com/mtharrison/vp-shark"
+  "homepage": "https://github.com/mtharrison/vp-shark",
+  "dependencies": {
+    "selenium-webdriver": "^2.42.1"
+  }
 }
