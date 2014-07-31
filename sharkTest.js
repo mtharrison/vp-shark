@@ -1,15 +1,20 @@
 var Shark = require('./index');
 
-var server = new Shark.Server(
-	'/Users/matt/Developer/node/html5-vp/server.js',
-	'http://localhost:4000'
-	);
+var server = new Shark.Server('http://localhost:4000');
 
-server.start(function(){
+server.on('started', function(){
+	var game = new Shark.Game(server);
 
-	console.log("Server running");
+	game.start('3-5-10', 'H3F0SF1');
 
-	setInterval(function(){}, 100000);
+	game.on('started', game.betMax);
 
-	//new Shark.Game();
+	game.on('dealt', function(){
+		game.holdCards([0]);
+	});
+
+	game.on('held', game.draw);
+
 });
+
+server.start();

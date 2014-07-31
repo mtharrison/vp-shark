@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/mtharrison/vp-shark",
   "dependencies": {
-    "selenium-webdriver": "^2.42.1"
+    "selenium-webdriver": "^2.42.1",
+    "webdriver-sync": "^0.14.0"
   }
 }
